@@ -8,6 +8,11 @@
   color: var(--primary-teks-color);
   font-size: 36px;
   line-height: 1.16;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .radio__list {
