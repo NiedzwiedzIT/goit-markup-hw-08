@@ -56,6 +56,10 @@
 
 /* Підпишіться на розсилку */
 .footer-social {
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
   }
