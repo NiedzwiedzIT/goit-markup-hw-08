@@ -192,6 +192,11 @@ body {
     margin-right: 87px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .main-nav__label {
+    margin-right: 93px;
+  }
+}
 
 .main-nav__logo {
   padding: 16px 15px;
@@ -781,6 +786,11 @@ body {
     flex-wrap: nowrap;
     justify-content: center;
     margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .radio__list {
+    margin-bottom: 50px;
   }
 }
 

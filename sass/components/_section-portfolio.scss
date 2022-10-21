@@ -2,8 +2,6 @@
 .section__portfolio {
   padding-top: 60px;
   padding-bottom: 60px;
-  // padding-top: 94px;
-  // padding-bottom: 94px;
 
   color: var(--primary-teks-color);
   font-size: 36px;
@@ -26,6 +24,9 @@
     flex-wrap: nowrap;
     justify-content: center;
     margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
   }
 }
 
