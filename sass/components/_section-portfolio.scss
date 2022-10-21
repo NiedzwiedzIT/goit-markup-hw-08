@@ -1,0 +1,44 @@
+/* Button nav portfolio */
+.section__portfolio {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  // padding-top: 94px;
+  // padding-bottom: 94px;
+
+  color: var(--primary-teks-color);
+  font-size: 36px;
+  line-height: 1.16;
+}
+
+.radio__list {
+  display: flex;
+  margin-bottom: 40px;
+
+  flex-wrap: wrap;
+  justify-content: left;
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+.portfolio__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.radio__item {
+  margin-right: 8px;
+  margin-bottom: 15px;
+
+  &:nth-child(5) {
+    margin-right: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}

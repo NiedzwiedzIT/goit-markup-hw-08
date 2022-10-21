@@ -1,0 +1,223 @@
+/* Modal */
+/*Data-modal*/
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--box-shadow-section-avatar-three);
+
+  opacity: 1;
+
+  transform: scale(1);
+  transition: opacity var(--duration) var(--timing-function),
+    visibility var(--duration) var(--timing-function),
+    transform var(--duration) var(--timing-function);
+
+  overflow-y: scroll;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 40px;
+  width: calc(100% - 2 * 15px);
+  border-radius: 4px;
+
+  background-color: var(--primary-color);
+  box-shadow: 0px 1px 3px var(--box-shadow-section-avatar-one),
+    0px 1px 1px var(--box-shadow-section-avatar-two),
+    0px 2px 1px var(--box-shadow-section-avatar-three);
+  text-align: center;
+
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform var(--duration) var(--timing-function);
+
+  @media screen and (min-width: calc(480px)) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: calc(1200px)) {
+    width: 528px;
+  }
+}
+
+.modal__is-hidden {
+  position: absolute;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  top: 8px;
+  right: 8px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  background-color: var(--primary-color);
+  border: 1px solid var(--box-shadow-radio-btn-one);
+  cursor: pointer;
+
+  transform: scale(1);
+}
+
+.modal__close {
+  transition: var(--duration) var(--timing-function);
+}
+
+.modal .modal__is-hidden:hover,
+.modal .modal__is-hidden:focus {
+  fill: var(--akcent-color);
+}
+
+.modal__title {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.modal__form {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.modal__group {
+  margin-bottom: 20px;
+  text-align: start;
+}
+
+.modal__wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 4px;
+}
+
+.modal__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.modal__input {
+  border: 1px solid var(--comment-textarea-border);
+  border-radius: 4px;
+  height: 40px;
+  padding-left: 42px;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    border-color: var(--akcent-color);
+  }
+}
+
+.modal__label {
+  color: var(--secondary-teks-color);
+
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+
+.modal__input {
+  transition: var(--duration) var(--timing-function);
+}
+
+.modal__input:hover + .modal__icon,
+.modal__input:focus + .modal__icon {
+  fill: var(--akcent-color);
+}
+
+.modal__icon {
+  position: absolute;
+  top: 50%;
+  left: 19px;
+
+  transform: translateY(-50%);
+  transition: var(--duration) var(--timing-function);
+}
+
+.modal__textarea {
+  height: 120px;
+  min-width: 100%;
+  resize: none;
+  padding: 16px 12px;
+  margin-top: 4px;
+  border-radius: 4px;
+  border: 1px solid var(--comment-textarea-border);
+
+  color: var(--primary-teks-color);
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+
+  transition: var(--duration) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    border-color: var(--akcent-color);
+  }
+}
+
+.checkbox__input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.checkbox__label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.checkbox__border {
+  display: block;
+}
+
+.checkbox__check {
+  display: none;
+  transition: var(--duration) var(--timing-function);
+}
+
+.checkbox__input:checked + .checkbox__icon .checkbox__check {
+  display: block;
+  fill: var(--primary-color);
+}
+
+.checkbox__input:checked + .checkbox__icon {
+  background-color: var(--akcent-color);
+  border-radius: 4px;
+}
+
+.checkbox__input:checked + .checkbox__icon > .checkbox__border {
+  display: none;
+}
+
+.contract {
+  margin-left: 10px;
+
+  color: var(--secondary-teks-color);
+  line-height: 1.16;
+  font-weight: 400;
+  font-size: 12px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+.contract__link {
+  margin-left: 5px;
+
+  color: var(--akcent-color);
+}
