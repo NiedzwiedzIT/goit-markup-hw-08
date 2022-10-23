@@ -111,7 +111,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    margin: -15px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -153,13 +153,10 @@
   background-color: var(--primary-color);
   margin-bottom: 30px;
 
-  &:last-child {
-    margin-bottom: 0;
-  }
-
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 4 * 15px) / 2);
-    margin-bottom: 0;
+    margin: 15px;
+    height: 100%;
   }
 
   @media screen and (min-width: 1200px) {

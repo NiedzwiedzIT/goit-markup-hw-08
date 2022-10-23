@@ -631,7 +631,7 @@ body {
   .section__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    margin: -15px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -676,13 +676,11 @@ body {
   background-color: var(--primary-color);
   margin-bottom: 30px;
 }
-.section__avatar:last-child {
-  margin-bottom: 0;
-}
 @media screen and (min-width: 768px) {
   .section__avatar {
     flex-basis: calc((100% - 60px) / 2);
-    margin-bottom: 0;
+    margin: 15px;
+    height: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
