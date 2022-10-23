@@ -22,12 +22,8 @@
   }
 }
 
-.footer-auth__item {
+.footer-auth__item:not(:last-child) {
   margin-bottom: 9px;
-
-  &__item:nth-last-child(1) {
-    margin-bottom: 0;
-  }
 }
 .footer__logo {
   color: var(--primary-color);
@@ -56,8 +52,12 @@
 
 /* Підпишіться на розсилку */
 .footer-social {
+  margin-top: 60px;
+  margin-bottom: 60px;
+
   @media screen and (min-width: 768px) {
-    margin-top: 60px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   @media screen and (min-width: 1200px) {
@@ -75,18 +75,27 @@
   }
 }
 
-.footer-media__item {
+.footer-wrap {
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+    margin-top: 0;
+  }
+}
+
+.footer-media__list {
   display: flex;
   justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.footer-media__item {
   margin: 0;
   padding: 0;
-  margin-top: 20px;
-  margin-bottom: 60px;
-  gap: 10px;
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 0;
-  }
 }
 
 .footer-media__link {

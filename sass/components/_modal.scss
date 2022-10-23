@@ -152,8 +152,8 @@
   border: 1px solid var(--comment-textarea-border);
 
   color: var(--primary-teks-color);
-  font-size: 12px;
-  line-height: 1.16;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
   cursor: pointer;
 
@@ -162,6 +162,11 @@
   &:hover,
   &:focus {
     border-color: var(--akcent-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 12px;
+    line-height: 1.16;
   }
 }
 

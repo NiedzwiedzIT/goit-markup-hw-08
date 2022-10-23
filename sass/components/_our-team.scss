@@ -2,6 +2,7 @@
 /* Наша команда */
 .section {
   padding-top: 60px;
+  padding-bottom: 60px;
 
   text-align: center;
 
@@ -31,6 +32,21 @@
       display: flex;
       justify-content: center;
     }
+  }
+}
+.no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.section--no-padding {
+  display: none;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -91,7 +107,6 @@
   display: block;
   margin-bottom: auto;
   margin-top: auto;
-  padding-bottom: 60px;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -119,11 +134,10 @@
 }
 
 .section__info {
-  padding-top: 16px;
+  padding-top: 30px;
   padding-bottom: 24px;
 
   @media screen and (min-width: 1200px) {
-    padding-top: 30px;
     padding-bottom: 30px;
   }
 }

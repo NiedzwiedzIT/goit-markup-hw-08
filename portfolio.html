@@ -457,7 +457,8 @@
                   <use href="./images/icons.svg.svg#icon-instagram"></use>
                 </svg>
               </a>
-
+            </li>
+            <li class="footer-media__item">
               <a
                 class="footer-media__link"
                 href="#"
@@ -468,7 +469,8 @@
                   <use href="./images/icons.svg.svg#icon-twitter"></use>
                 </svg>
               </a>
-
+            </li>
+            <li class="footer-media__item">
               <a
                 class="footer-media__link"
                 href="#"
@@ -479,7 +481,8 @@
                   <use href="./images/icons.svg.svg#icon-facebook"></use>
                 </svg>
               </a>
-
+            </li>
+            <li class="footer-media__item">
               <a
                 class="footer-media__link"
                 href="#"
@@ -494,29 +497,27 @@
           </ul>
         </div>
         <!-- Підпишіться на розсилку -->
-        <form>
-          <div class="footer-social">
-            <b class="footer-social__title">Підпишіться на розсилку</b>
-            <div class="footer-subscribe">
-              <div class="footer-form">
-                <input
-                  class="footer-form__input"
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder=" "
-                />
-                <label for="email" class="footer-form__label">E-mail</label>
-              </div>
-              <button type="submit" class="modal__btm">
-                Підписатися
-                <svg class="section-modal__icon" width="24" height="24">
-                  <use href="./images/icons.svg.svg#icon-icon-send-1"></use>
-                </svg>
-              </button>
+        <div class="footer-wrap">
+          <b class="footer-social__title">Підпишіться на розсилку</b>
+          <form class="footer-subscribe">
+            <div class="footer-form">
+              <input
+                class="footer-form__input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder=" "
+              />
+              <label for="email" class="footer-form__label">E-mail</label>
             </div>
-          </div>
-        </form>
+            <button type="submit" class="modal__btm">
+              Підписатися
+              <svg class="section-modal__icon" width="24" height="24">
+                <use href="./images/icons.svg.svg#icon-icon-send-1"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <!-- Mobail menu-->
@@ -541,7 +542,9 @@
             <a href="mailto:info@devstudio.com" class="mob-contact__link">info@devstudio.com</a>
           </li>
           <li class="mob-contact__item">
-            <a href="tel:+380961111111" class="mob-contact__link">+38 096 111 11 11</a>
+            <a href="tel:+380961111111" class="mob-contact__link mob-contact__link--color-akcent"
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
         <ul class="mob-socials">
